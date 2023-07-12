@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row py-md-2 mx-auto justify-content-center">
+        <div class="col-md-8 bg-light rounded p-3">
+            <form action="" [formGroup]="agForm" (ngSubmit)="postdata(agForm)" autocomplete="off">
+                <table class="table">
+                    <tr>
+                        <td colspan="2">
+                            <h1 class="text-center">Add New User</h1>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" formControlName="name" class="form-control"><br></td>
+                    </tr>
+            
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" formControlName="email" class="form-control"><br></td>
+                    </tr>
+            
+                    <tr>
+                        <td>Mobile</td>
+                        <td><input type="text" formControlName="phone" class="form-control"><br></td>
+                    </tr>
+            
+                    <tr>
+                        <td>Address</td>
+                        <td><input type="text" formControlName="address" class="form-control"><br></td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="submit" value="Add New User" class="btn btn-success mb-3">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
